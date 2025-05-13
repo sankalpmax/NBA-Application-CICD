@@ -1,0 +1,7 @@
+[
+  { "name": "Los Angeles Lakers", "abbreviation": "LAL", "city": "Los Angeles" },
+  { "name": "Golden State Warriors", "abbreviation": "GSW", "city": "San Francisco" },
+  { "name": "Chicago Bulls", "abbreviation": "CHI", "city": "Chicago" },
+  { "name": "Boston Celtics", "abbreviation": "BOS", "city": "Boston" }
+]
+
