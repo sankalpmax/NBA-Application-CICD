@@ -14,7 +14,7 @@ pipeline {
        			 }
 	stage('Docker Run'){
 		steps{
-			sh 'docker run -d -p 3000:3000 --name los-Angles-Lakers sankalp/lakers-club:01'
+			sh 'docker run -d -p 3000:3000 --name los-Angles-Lakers sankalparava/lakers-club:01'
 	
 				}
 			}
