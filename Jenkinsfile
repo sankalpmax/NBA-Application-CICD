@@ -12,6 +12,11 @@ pipeline {
                 sh 'docker build -t sankalparava/lakers-club:01 .'
          		   	}
        			 }
+	stage('Docker Run'){
+		steps{
+			sh 'docker run -d -p 3000:3000 --name los-Angles-Lakers sankalp/lakers-club:01'
+	
+				}
+			}
 		}
-	}
-		
+	}		
