@@ -18,5 +18,13 @@ pipeline {
 	
 				}
 			}
+	stage('Docker Image Push'){
+		steps{
+			docker.withRegistry('https://index.docker.io/v1/', 'dockerhub') {
+			sh 'docker tag sankalparava/lakers-club:01'
+			sh 'docker push sankalparava/lakers-club:01'
+				}
+			}
 		}
-	}		
+	}
+}		
