@@ -1,0 +1,19 @@
+apiVersion: apps/v1           
+kind: Deployment
+metadata:
+  name: lakers-club-deployment
+spec:
+  replicas: 2            
+  selector:
+    matchLabels:
+      app: lakers-club-deployment
+  template:
+    metadata:
+      labels:
+        app: lakers-club-deployment 
+    spec:
+      containers:
+        - name: football-container
+          image: sankalparava/lakers-club:04
+          ports:
+            - containerPort: 80
